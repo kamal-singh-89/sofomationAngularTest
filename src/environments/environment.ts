@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseURL: 'https://api.airtable.com/',
+  token: 'Bearer key3GnfHvdYoWedr5' // WRITE HERE JUST TEMPARARY
 };
 
 /*

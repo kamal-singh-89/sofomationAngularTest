@@ -1,0 +1,23 @@
+.controles-container .radio-group{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+.controles-container > mat-form-field {
+    width: 100%;
+}
+.button-row{
+    float:right;
+}
+.button-row .submit{
+    margin-right: 20px;
+}
+.user-info-title{
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.normal-form{
+    min-height: 100vh;
+}

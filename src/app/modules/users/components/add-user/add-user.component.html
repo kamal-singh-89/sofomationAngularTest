@@ -1,0 +1,37 @@
+<div class="user-info-title">
+    <p>Add User</p>
+</div>
+<form [formGroup]="addUserForm" class="normal-form" (ngSubmit)="saveUserForm(addUserForm);">
+    <mat-grid-list cols="1" rowHeight="300px">
+        <mat-grid-tile>
+            <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="firstName" matInput placeholder="First Name">
+                    <mat-error *ngIf="getAddFormControls.firstName?.errors?.required">{{message.FIRST_NAME}}</mat-error>
+                    <mat-error *ngIf="getAddFormControls.firstName?.errors?.pattern">{{message.VALID_NAME}}</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="lastName" matInput placeholder="Last Name">
+                    <mat-error *ngIf="getAddFormControls.lastName?.errors?.required">{{message.LAST_NAME}}</mat-error>
+                    <mat-error *ngIf="getAddFormControls.lastName?.errors?.pattern">{{message.VALID_NAME}}</mat-error>
+                </mat-form-field>
+                <div class="add-bottom-padding">
+                    <mat-radio-group formControlName="gender" class="radio-group">
+                        <mat-radio-button value="Male">Male</mat-radio-button>
+                        <mat-radio-button value="Female">Female</mat-radio-button>
+                        <mat-radio-button value="Not specified">Not specified</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <mat-form-field>
+                    <input formControlName="dob" [max]="maxDate" matInput [matDatepicker]="picker" placeholder="Date of Birth" readonly>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <div class="button-row">
+                    <button [disabled]="addUserForm.invalid && isSubmitting" class="submit" mat-raised-button color="primary" type="submit">{{isSubmitting ? 'Submitting...': 'Submit'}}</button>
+                    <button [disabled]="isSubmitting" [routerLink]="[userListRoute]" mat-raised-button color="warn">Cancel</button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</form>
