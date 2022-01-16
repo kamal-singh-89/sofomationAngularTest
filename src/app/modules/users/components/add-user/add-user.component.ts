@@ -21,7 +21,7 @@ export class AddUserComponent implements OnInit, OnDestroy {
   maxDate = new Date(); // SET A MAX DATE IN DOB DATE PICKER
   userListRoute = `/${CONSTANTS.FONRTEND_URL.USER_LIST}`; // AFTER ADDING REDIRECT TO LIST
   isSubmitting = false;
-  private readonly onDestroy = new Subject<void>();
+  private readonly onDestroy = new Subject<void>(); // USED TO DESTORY THE OBSERVAL
 
   constructor(
     private readonly formBuilder: FormBuilder,

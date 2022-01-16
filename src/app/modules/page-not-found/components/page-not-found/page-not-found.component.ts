@@ -8,7 +8,7 @@ import { CONSTANTS } from '../../../../core/constants/constants';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  homePageRoute = `/${CONSTANTS.FONRTEND_URL.USER_LIST}`;
+  homePageRoute = `/${CONSTANTS.FONRTEND_URL.USER_LIST}`; // REDIRECTING ON HOME BUT HERE WE HAVE USER LIST
 
   constructor() { }
 
