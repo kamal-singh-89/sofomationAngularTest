@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpService } from 'src/app/core/services/http.service';
+import { HttpService } from '../../../core/services/http.service';
 
 import { UserService } from './user.service';
 

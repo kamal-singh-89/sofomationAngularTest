@@ -1,6 +1,6 @@
 import { formatDate } from '@angular/common';
 import { Injectable } from '@angular/core';
-import { DATE_FORMAT, DATE_FORMAT_LANGUAGE } from 'src/app/core/constants/mat-date-format';
+import { DATE_FORMAT, DATE_FORMAT_LANGUAGE } from '../../core/constants/mat-date-format';
 
 @Injectable({
   providedIn: 'root'

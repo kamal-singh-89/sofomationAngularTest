@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { CONSTANTS } from 'src/app/core/constants/constants';
-import { IUser, IUsersListResponse } from 'src/app/core/models/user.model';
-import { HttpService } from 'src/app/core/services/http.service';
+import { CONSTANTS } from '../../../core/constants/constants';
+import { IUser, IUsersListResponse } from '../../../core/models/user.model';
+import { HttpService } from '../../../core/services/http.service';
 
 @Injectable({
   providedIn: 'root'

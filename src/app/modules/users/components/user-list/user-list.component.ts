@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { IUser, IUsersListResponse } from 'src/app/core/models/user.model';
+import { IUser, IUsersListResponse } from '../../../../core/models/user.model';
 import { UserService } from '../../services/user.service';
 
 @Component({

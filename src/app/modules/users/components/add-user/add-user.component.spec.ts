@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { CommonServiceService } from 'src/app/shared/services/common-service.service';
-import { SnackBarService } from 'src/app/shared/services/snack-bar.service';
+import { CommonServiceService } from '../../../../shared/services/common-service.service';
+import { SnackBarService } from '../../../../shared/services/snack-bar.service';
 import { UserService } from '../../services/user.service';
 
 import { AddUserComponent } from './add-user.component';

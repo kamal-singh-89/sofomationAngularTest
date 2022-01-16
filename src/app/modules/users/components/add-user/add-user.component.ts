@@ -3,10 +3,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { CONSTANTS } from 'src/app/core/constants/constants';
-import { IUser } from 'src/app/core/models/user.model';
-import { CommonServiceService } from 'src/app/shared/services/common-service.service';
-import { SnackBarService } from 'src/app/shared/services/snack-bar.service';
+import { CONSTANTS } from '../../../../core/constants/constants';
+import { IUser } from '../../../../core/models/user.model';
+import { CommonServiceService } from '../../../../shared/services/common-service.service';
+import { SnackBarService } from '../../../../shared/services/snack-bar.service';
 import { UserService } from '../../services/user.service';
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CONSTANTS } from 'src/app/core/constants/constants';
+import { CONSTANTS } from '../../../../core/constants/constants';
 
 @Component({
   selector: 'app-page-not-found',

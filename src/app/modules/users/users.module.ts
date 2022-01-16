@@ -18,8 +18,8 @@ import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/materia
 import { DD_MM_YYYY_Format } from '../../core/constants/mat-date-format';
 import { MomentDateAdapter } from '@angular/material-moment-adapter';
 import { MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
-import { CONSTANTS } from 'src/app/core/constants/constants';
-import { SnackBarService } from 'src/app/shared/services/snack-bar.service';
+import { CONSTANTS } from '../../core/constants/constants';
+import { SnackBarService } from '../../shared/services/snack-bar.service';
 
 @NgModule({
   declarations: [
